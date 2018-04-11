@@ -1,0 +1,19 @@
+那就首关昌类境ARuntm奂u白类 他是一大l借与VM运行时环境有关仪奂类 这环奂是Slngleton仪。 狱昌钢大l白白境儿重颊仪与也纯。
+工 RuntlmieugetRuntme[回bA聚借怡有d阡VM仪 泓行时环境类 这也春在ava中u有一一环泓借颊到境重泓仁鄂时河不与境仪纯探河。
+2A Runtlmie上异他大吊鄂先仪皂法都是交例皂法类 也就是昌每类关这泊仁运行时调P时都颊P到getRuntme皂法。
+
+二 Runtme中与仪exlt纯河春这江怡有时阡VM仪纯河类 估计也春u类重一仪一个白类 d寺狱重到Systemi奂中与仪exlt交仁上也春重重这调白 Runtmeuexlt[i关这暨VM仪类 这颊昌述一Tiava寺Runtme这回借仪一航规到 [类白途也关探颊刺i 类 Of浩在借借这
+江类 菲Of浩异有帕与 止 这类白探Java仪关规恩类 在吊个重泓作系纯OJ类怡会发生一东 涛。
+
+、 RuntmeuaddSnutdownnook[i纯河首阡b寺了重述一大lnook在VM重it泓仁snutdown仪议程J类 纯河仪重河县白颊春一个钢估化讷白
+
+ 
+
+ 
+
+ 
+
+ 
+
+3有重it泓仁仪anead交传脱首阡b以 [、了重境类 Jav中仪anead都春重it泓仁这了就不信境仪玟i
+

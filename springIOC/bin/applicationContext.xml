@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+         xmlns:aop="http://www.springframework.org/schema/aop"  
+         xmlns:tx="http://www.springframework.org/schema/tx"  
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd  
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd  
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">  
+ <bean id="school" class="ioc.iocsample.School">  
+       <constructor-arg index="0">  
+         <value>廊坊师院</value>  
+       </constructor-arg>  
+ </bean>  
+ <bean id="student" class="ioc.iocsample.Student">  
+     <property name="id"      value="001"/>  
+     <property name="name" value="张三"/>  
+     <property name="school"  ref ="school"/>  
+ </bean>  
+</beans>
+<!-- IOC：inverse of Control：控制反转。意思是程序中的之间的关系，不用代码控制，而完全是由容器来控制。
+在运行阶段，容器会根据配置信息直接把他们的关系注入到组件中。同样，这也是依赖注入的含义。依赖注入和控制反转其实是一个概念。
+只不过强调的不同而已，依赖注入强调关系的注入是由容器在运行时完成，而控制反转强调关系是由容器控制。其实本质是一样的。
+ --> 

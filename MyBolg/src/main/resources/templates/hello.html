@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hello World!</title>
+    
+</head>
+<body>
+	<p th:text="${ll}">default message</p>
+	<h1 th:inline="text">Hello.v.2</h1>
+	<p th:text="${userid}">默认</p>
+	<p th:text="${hello}"></p>
+	<input type="text" name="in1" id="in1" value="23"  />
+	<input type="text" name="in2" id="in2" th:value="${in2}" value="${in2}" />
+	<input type="submit" />
+<script th:inline="javascript">
+    var message = [[${ll}]];
+    console.log([[${userid}]]);
+    var in1 =document.getElementById("in1").value;
+    in1=$("#in1").val();
+    console.log(in1);
+</script>	
+	
+	
+<div id="div1" style="left:15%;width:70%;position:absolute;">
+    <p>欢迎使用 wangEditor 编辑器</p>
+</div>
+<button id="btn1">获取html</button>
+<button id="btn2">获取text</button>
+
+<script type="text/javascript" src="/wangEditor.min.js"></script>
+<script type="text/javascript">
+    var E = window.wangEditor
+    var editor = new E('#div1')
+
+    editor.create()
+        editor.txt.html('<pre><code>public class Article implements Serializable{;</code></pre><p><br></p>')
+	    document.getElementById('btn1').addEventListener('click', function () {
+        // 读取 html
+        alert(editor.txt.html())
+    }, false)
+    document.getElementById('btn2').addEventListener('click', function () {
+        // 读取 text
+        alert(editor.txt.text())
+    }, false)
+</script>
+	
+	<p>欢迎使用 wangEditor 编辑器</p><pre><code>String ss="Hello World";</code></pre><p><br></p>
+	<form action="http://localhost:8069/hello2" method="post">  
+        <table>  
+            <tr>  
+                <td>账号</td>  
+                <td>  
+                    <input type="text" name="userName">  
+                </td>  
+            </tr>  
+            <tr>  
+                <td>密码</td>  
+                <td>  
+                    <input type="password" name="password">  
+                </td>  
+            </tr>  
+            <tr>  
+                <td> </td>  
+                <td>  
+                    <input type="submit" value="提交" onclick="addUser()">  
+                </td>  
+            </tr>  
+        </table>  
+    </form> 
+	
+	
+	
+	
+	
+	
+</html>

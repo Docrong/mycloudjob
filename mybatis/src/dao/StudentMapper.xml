@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.StudentMapper"><!--标志mapper(映射)是哪一个接口的mapper-->
+    <resultMap id="studentMapper" type="entity.Student"><!--声明mapper的id type表示映射道德javabean-->
+        <id column="Sid" property="id"/><!--id 主键 column☞数据库 property☞javabean 这里省略了java type等-->
+        <result property="name" column="Sname"/>
+        <result property="sex" column="Ssex"/>
+        <result property="tId" column="Tid"/>
+        <result property="age" column="SageNum"/>
+    </resultMap>
+    <insert id="insertStudent" parameterType="entity.Student" ><!--parameter表示传入参数是啥--><!--对应StudentMapper接口里的方法名-->
+
+        INSERT INTO student (Sid,Sname,Ssex,Tid,SageNum)VALUES (#{id},#{name},#{sex},#{tId},#{age})
+<!--#{}对应studentmapper里的参数-->
+    </insert>
+    <select id="selectOneById" resultMap="studentMapper">
+        SELECT * FROM student WHERE Sid=#{id}
+    </select>
+    <select id="selectAllStudent" resultMap="studentMapper"><!--resultType可设定返回类型-->
+        SELECT *FROM student
+    </select>
+</mapper>
