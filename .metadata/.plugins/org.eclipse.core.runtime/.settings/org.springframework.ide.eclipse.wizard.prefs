@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.amqp=1
 org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.cloud-feign=1
 org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.cloud-hystrix-dashboard=1
 org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.artifactId=demo
